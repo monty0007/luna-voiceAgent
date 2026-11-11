@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "aims-token",
+      "description": "Bearer token for the AIMS MCP server",
+      "password": true
+    }
+  ],
+  "servers": {
+    "aims": {
+      "type": "http",
+      "url": "https://aims.synapx.delivery/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:aims-token}"
+      }
+    }
+  }
+}

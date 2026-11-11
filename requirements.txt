@@ -1,0 +1,12 @@
+azure-ai-projects>=2.3.0
+azure-ai-voicelive[aiohttp]>=1.2.0b4
+openai>=3.0.0
+azure-identity
+python-dotenv
+aiohttp
+# Audio I/O. We use `sounddevice` (bundles PortAudio, no sudo needed) together
+# with `src/pyaudio.py`, a small shim that exposes the PyAudio API the official
+# voice client expects. This avoids needing Homebrew/MacPorts for PortAudio.
+sounddevice
+# If you later install real PyAudio (brew install portaudio && pip install
+# pyaudio), delete src/pyaudio.py so the real package is used instead.

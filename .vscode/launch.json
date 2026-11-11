@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Create voice agent",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/create_agent.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "python": "${workspaceFolder}/.venv/bin/python"
+    },
+    {
+      "name": "Run realtime voice client",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/voice_client.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/src",
+      "envFile": "${workspaceFolder}/.env",
+      "python": "${workspaceFolder}/.venv/bin/python"
+    },
+    {
+      "name": "Pre-flight check",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/check_setup.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "python": "${workspaceFolder}/.venv/bin/python"
+    },
+    {
+      "name": "Create Work IQ connection + toolbox",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/workiq_toolbox.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "python": "${workspaceFolder}/.venv/bin/python"
+    },
+    {
+      "name": "Smoke-test tools (text)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/test_tools.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "python": "${workspaceFolder}/.venv/bin/python"
+    }
+  ]
+}
