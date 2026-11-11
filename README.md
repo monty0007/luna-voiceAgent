@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/banner.svg" alt="Luna: realtime voice agent on the Azure AI Voice Live SDK" width="100%">
+</p>
+
 # Realtime Voice Agent — Azure Voice Live (gpt-realtime-2.1) + optional Foundry Agent
 
 A realtime voice assistant built on the **Azure AI Voice Live SDK**. You talk, it
